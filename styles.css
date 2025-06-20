@@ -1,0 +1,179 @@
+/* Custom styles */
+
+/* For the main text */
+.hero-text {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #5b7801;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Content Box styling */
+.content-box {
+    padding-top: 5rem; /* Adds extra padding at the top */
+    padding: 1.5rem;   /* General padding for all sides */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;     /* Optional: You can set a max-width to restrict its size */
+    margin: 0 auto;     /* Centers the content box */
+}
+
+/* Custom margin for the top of the content */
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin-top: 100px;
+}
+
+/* Make sure the image is responsive */
+img.img-fluid {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* For better spacing between text and image */
+.container {
+    margin-top: 100px;
+}
+
+.large-text {
+    font-size: 16px; /* Default size */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.flearning{
+    text-decoration: none;
+    color:white;
+}
+
+.flearning:hover{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px; /* Add some padding for a button-like effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.socials{
+    text-decoration: none;
+    color: white;
+}
+
+.socials:hover{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px; /* Add some padding for a button-like effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+@media (min-width: 768px) {
+    .large-text {
+        font-size: 18px; /* Increase size on medium screens and up */
+    }
+}
+
+@media (min-width: 1200px) {
+    .large-text {
+        font-size: 20px; /* Larger font size on large screens */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Colors for the chips */
+.bg-green {
+    background-color: #5b7801;
+    color: white;
+}	
+
+.bg-blue {
+    background-color: #0097b2;
+    color: white;
+}	
+
+.bio-text {
+    margin-bottom: 30px; /* Espaciado inferior */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    font-family: 'League Spartan', sans-serif; /* Fuente agradable */
+}
+
+.large-text {
+    font-weight: normal; /* Normalizar el peso del texto */
+    line-height: 1.6; /* Mejorar la legibilidad */
+}
+
+/* Form Styling */
+form {
+    background-color: #f7f7f7; /* Light background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto; /* Center the form */
+    color: #333; /* Text color to ensure readability */
+}
+
+/* Input and textarea styling */
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333; /* Ensure text is dark and readable */
+    background-color: white; /* White background for input fields */
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #5b7801;
+    outline: none;
+    box-shadow: 0 0 5px rgba(91, 120, 1, 0.5);
+}
+
+/* Button styling */
+form button {
+    background-color: #0097b2; /* A contrasting blue for the button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #007f8a; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
