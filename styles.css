@@ -1,179 +1,141 @@
-/* Custom styles */
-
-/* For the main text */
-.hero-text {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+/* Global Styles */
+body {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(to right, #f8fbfd, #e6f1f6);
+    color: #333;
 }
 
-/* Navbar styling */
-.navbar {
-    background-color: #5b7801;
+h1, h2, h3 {
+    color: #053c5e;
+}
+
+a {
+    color: #0d6efd;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #053c5e;
+}
+
+/* Navbar */
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
-    font-weight: bold;
-    font-size: 2rem;
+    font-weight: 700;
 }
 
-/* Content Box styling */
-.content-box {
-    padding-top: 5rem; /* Adds extra padding at the top */
-    padding: 1.5rem;   /* General padding for all sides */
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 80%;     /* Optional: You can set a max-width to restrict its size */
-    margin: 0 auto;     /* Centers the content box */
+.nav-link {
+    font-weight: 500;
+    font-size: large;
 }
 
-/* Custom margin for the top of the content */
-body {
-    font-family: 'League Spartan', sans-serif;
-    margin-top: 100px;
+.nav-link:hover {
+    color: #053c5e;
 }
 
-/* Make sure the image is responsive */
-img.img-fluid {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    object-fit: cover;
+/* Hero Section */
+.hero-section {
+    background: url('images/hero.jpg') center/cover no-repeat;
+    height: 80vh;
 }
 
-/* For better spacing between text and image */
-.container {
-    margin-top: 100px;
+.hero-section h1 {
+    text-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
-.large-text {
-    font-size: 16px; /* Default size */
-    line-height: 1.6;
-    text-align: justify;
-}
-
-.flearning{
-    text-decoration: none;
-    color:white;
-}
-
-.flearning:hover{
-    text-decoration: none;
+.hero-section p{
     color: black;
-    padding: 5px 10px; /* Add some padding for a button-like effect */
-    border-radius: 5px; /* Rounded corners */
 }
 
-.socials{
-    text-decoration: none;
-    color: white;
+/* Glass Sections */
+.glass-section {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.socials:hover{
-    text-decoration: none;
-    color: black;
-    padding: 5px 10px; /* Add some padding for a button-like effect */
-    border-radius: 5px; /* Rounded corners */
-}
-
-@media (min-width: 768px) {
-    .large-text {
-        font-size: 18px; /* Increase size on medium screens and up */
-    }
-}
-
-@media (min-width: 1200px) {
-    .large-text {
-        font-size: 20px; /* Larger font size on large screens */
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Colors for the chips */
-.bg-green {
-    background-color: #5b7801;
-    color: white;
-}	
-
-.bg-blue {
-    background-color: #0097b2;
-    color: white;
-}	
-
-.bio-text {
-    margin-bottom: 30px; /* Espaciado inferior */
-    font-size: 1.2rem; /* Tamaño de fuente */
-    font-family: 'League Spartan', sans-serif; /* Fuente agradable */
-}
-
-.large-text {
-    font-weight: normal; /* Normalizar el peso del texto */
-    line-height: 1.6; /* Mejorar la legibilidad */
-}
-
-/* Form Styling */
-form {
-    background-color: #f7f7f7; /* Light background for the form */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto; /* Center the form */
-    color: #333; /* Text color to ensure readability */
-}
-
-/* Input and textarea styling */
-form input,
-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #333; /* Ensure text is dark and readable */
-    background-color: white; /* White background for input fields */
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #5b7801;
-    outline: none;
-    box-shadow: 0 0 5px rgba(91, 120, 1, 0.5);
-}
-
-/* Button styling */
-form button {
-    background-color: #0097b2; /* A contrasting blue for the button */
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
+/* Badge Cards */
+.badge-card {
+    background: #e3f2fd;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s ease;
     cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-form button:hover {
-    background-color: #007f8a; /* Darker blue on hover */
+
+.badge-card.green {
+    background: #d0f8ce;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    form {
-        padding: 20px;
-    }
+.badge-card:hover {
+    transform: translateY(-5px);
+}
 
-    form input,
-    form textarea {
-        font-size: 1rem;
-    }
 
-    form button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
+.extra-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.badge-card.expanded .extra-info {
+  max-height: 200px; /* or enough to show all content */
+}
+
+
+/*Contact badges*/
+.contact-link {
+  display: block;
+  padding: 1rem;
+  background: #e3f2fd;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  transition: background 0.4s ease, transform 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-link:hover {
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Instagram */
+.contact-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 8px 20px rgba(236, 64, 122, 0.6);
+}
+
+/* Facebook */
+.contact-link.facebook:hover {
+    background: linear-gradient(45deg, #1877f2, #4682f4);
+    box-shadow: 0 8px 20px rgba(24, 119, 242, 0.6);
+}
+
+/* Whatsapp */
+.contact-link.whatsapp:hover {
+    background: linear-gradient(45deg, #075e54, #128c7e, #25d366, #dcf8c6); /* Purple-blue gradient for email */
+    box-shadow: 0 8px 20px rgba(101, 48, 207, 0.6);
+}
+
+
+
+footer {
+    background: #053c5e;
 }
