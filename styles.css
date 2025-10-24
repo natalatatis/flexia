@@ -18,24 +18,91 @@ a:hover {
     color: #053c5e;
 }
 
+/* Leer mas button*/
+.leer-mas {
+    display: inline-block;       
+    font-size: 1.1rem;         
+    color: #053c5e;              
+    padding: 8px 16px;           
+    border-radius: 5px;          
+    text-decoration: none;       
+    transition: background 0.3s, color 0.3s, transform 0.3s; 
+}
+
+.leer-mas:hover {
+    color: #38b6ff;           
+    transform: translateY(-2px); 
+}
+
+
 /* Navbar */
+/* Glassmorphism Navbar */
 .glass-navbar {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.15); /* Transparencia */
+    backdrop-filter: blur(12px); /* Efecto vidrio */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1rem;
+    transition: background 0.3s ease, padding 0.3s ease;
 }
 
+/* Ajuste al hacer scroll */
+.glass-navbar.scrolled {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 1rem;
+}
+
+/* Marca (logo o nombre) */
 .navbar-brand {
-    font-weight: 700;
-}
-
-.nav-link {
-    font-weight: 500;
-    font-size: large;
-}
-
-.nav-link:hover {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.8rem;
     color: #053c5e;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #38b6ff; /* Azul moderno */
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    color: #053c5e;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #38b6ff; /* Azul acento */
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #38b6ff;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Botón toggle (menú móvil) */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    color : #053c5e;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(5, 60, 94, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Hero Section */
@@ -81,6 +148,24 @@ a:hover {
     transform: translateY(-5px);
 }
 
+/* Extended services cards */
+#consultas .card,
+#deportistas .card,
+#recuperacion .card,
+#movilidad .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for extended srevices cards*/
+#consultas .card:hover,
+#deportistas .card:hover,
+#recuperacion .card:hover,
+#movilidad .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .extra-info {
   max-height: 0;
@@ -92,7 +177,7 @@ a:hover {
 }
 
 .badge-card.expanded .extra-info {
-  max-height: 200px; /* or enough to show all content */
+  max-height: 200px; 
 }
 
 
